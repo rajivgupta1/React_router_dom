@@ -5,18 +5,21 @@ import { Route } from "react-router-dom";
 import Error from './Componetnts/Error';
 
 import {Switch} from 'react-router-dom';
+import { Menu } from '@material-ui/icons';
 
 const App =() => {
   return (
     <>
-
+    <Menu />
       <Switch>
       
-        <Route path="/About"  component={About}/>
-        <Route path="/Conatct"  component={Conatct}/>
+        <Route exact path="/about"  component={About}/>
+        <Route exact path="/conatct"  component={Conatct}/>
         <Route component={Error} />
 
       </Switch>
+
+
       {/* <About/>
       <Conatct/> */}
     </>
